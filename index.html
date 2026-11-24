@@ -6,11 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mon cyberfolio</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/AestheticFluidBg.min.js" defer></script>
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
         <header>
-            <nav>
+            <button id="bouton-menu" type="button" aria-controls="menu-principal" aria-expended="false">Menu</button>
+
+            <nav id="menu-principal">
                 <a href="index.html">Accueil</a>
                 <a href="realisations.html">Réalisations</a>
                 <a href="contact.html">Contact</a>
@@ -19,9 +23,15 @@
 
         <main>
             <section class="introduction">
-                <h1>Thévenet Éloïs</h1>
-                <p>Étudiant en cybersécurité.</p>
-                <a class="lien-projets" href="realisations.html">Voir mes projets</a>
+                <div class="introduction-fond" aria-hidden="true">
+                    <div id="fond-introduction"></div>
+                </div>
+
+                <div class="introduction-contenu">
+                    <h1>Thévenet Éloïs</h1>
+                    <p>Étudiant en cybersécurité.</p>
+                    <a class="lien-projets" href="realisations.html">Voir mes projets</a>
+                </div>
             </section>
 
             <section class="competences">
