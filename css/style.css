@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "DxBrutalist-ExtraBold";
+    src: url("../fonts/DxBrutalist-ExtraBold.otf") format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
 body {
     background-color: #1c1c1c;
     color: #e4e4e4;
@@ -69,6 +76,8 @@ nav a:focus-visible {
     margin: 0;
     color: #ff5fc2;
     font-size: clamp(48px, 10vw, 112px);
+    font-family: "DxBrutalist-ExtraBold", Arial, sans-serif;
+    font-weight: 400;
     line-height: 1;
 }
 
