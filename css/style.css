@@ -47,8 +47,9 @@ nav a:focus-visible {
 }
 
 .competences ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(mix(100%, 200px), 1fr));
+    grid-auto-rows: 1fr;
     gap: 16px;
     list-style: none;
     margin: 0;
@@ -91,6 +92,10 @@ footer{
     .competences,
     footer {
         padding: 24px 16px;
+    }
+
+    .competences ul {
+        grid-template-columns: 1fr;
     }
 
     .demarche-securite {
