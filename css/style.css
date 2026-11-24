@@ -62,3 +62,39 @@ nav a:focus-visible {
     padding: 16px;
 }
 
+.demarche-securite {
+    margin: 32px 24px;
+    padding: 24;
+    background-color: #282828;
+    border-left: 4px solid #00ff0b;
+}
+
+.demarche-securite h2 {
+    margin-top: 0;
+}
+
+footer{
+    padding: 16px 24px;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 12px;
+        padding: 12px 16px;
+    }
+
+    .introduction {
+        padding: 48px 16px;
+    }
+
+    .competences,
+    footer {
+        padding: 24px 16px;
+    }
+
+    .demarche-securite {
+        margin: 24px 16px;
+        padding: 16px;
+    }
+}
