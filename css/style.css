@@ -32,11 +32,19 @@ nav a:focus-visible {
 }
 
 .introduction {
+    margin: 16px;
     padding: 64px 24px;
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-    background-color: #282828;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 28px;
+    background: linear-gradient(
+        145deg,
+        rgba(0, 255, 0, 0.12),
+        rgba(28,28,28, 0.48) 60%
+    );
+    backdrop-filter: blur(16px) saturate(1.35);
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255, 0.24),
+    0 12px 32px rgba(0,0,0,0.25);
 }
 
 .introduction-fond {
@@ -70,7 +78,7 @@ nav a:focus-visible {
 
 .competences ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap balance;
     gap: 16px;
     list-style: none;
     margin: 0;
