@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mon cyberfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/AestheticFluidBg.min.js" defer></script>
+        <script src="js/main.js" defer></script>
     </head>
+
     <body>
-        <h1>Thévenet Éloïs</h1>
-        <p>Bienvenue sur mon cyberfolio</p>
+        <header>
+            <button id="bouton-menu" type="button" aria-controls="menu-principal" aria-expended="false">Menu</button>
+
+            <nav id="menu-principal">
+                <a href="index.html">Accueil</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="contact.html">Contact</a>
+             </nav>
+        </header>
+
+        <main class="contenu-animé">
+            <div class="introduction-fond" aria-hidden="true">
+                    <div id="fond-introduction"></div>
+            </div>
+            
+            <section class="introduction">
+                <div class="introduction-contenu">
+                    <h1>Thévenet Éloïs</h1>
+                    <p>Étudiant en cybersécurité.</p>
+                    <a class="lien-projets" href="realisations.html">Voir mes projets</a>
+                </div>
+            </section>
+
+            <section class="competences">
+                <h2>Compétences</h2>
+                <ul>
+                    <li>Ici je fais une longue liste</li>
+                    <li>Avec mes compétences</li>
+                    <li>Voilà hum</li>
+                    <li>Calvin il fait semblant de travailler en vrai</li>
+                </ul>
+            </section>
+
+            <section class="demarche-securite">
+                <h2>Ma démarche de sécurité</h2>
+                <p>Blablabla la sécu.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Cyberfolio d'Éloïs Thévenet</p>
+        </footer>
+        </p>
     </body>
 </html>
