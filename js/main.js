@@ -19,3 +19,39 @@ if (document.querySelector("#fond-introduction") && window.Color4Bg?.AestheticFl
         loop: !window.matchMedia("(prefers-reduced-motion: reduce)").matches
     });
 }
+
+const boutonsFiltres = document.querySelectorAll("#filtres-projets button");
+const projets = document.querySelectorAll("article[data-categorie]");
+
+boutonsFiltres.forEach((bouton) =>{
+    bouton.addEventListener("click", () => {
+        const filtre = bouton.dataset.filtre;
+
+        projets.forEach((projet) => {
+            const afficher = filtre === "tous" || projet.dataset.categorie === filtre;
+            projet.hidden = !afficher;
+        });
+
+        boutonsFiltres.forEach((autreBouton) => {
+            autreBouton.setAttribute("aria-pressed", String(autreBouton === bouton));
+        });
+    });
+});
+
+const formulaireContact = document.querySelector("#formulaire-contact");
+const retourContact = document.querySelector("#retour-contact");
+
+if (formulaireContact && retourContact) {
+    formulaireContact.addEventListener("input", () => {
+        retourContact.textContent = "";
+    });
+
+    formulaireContact.addEventListener("invalid", () => {
+        retourContact.textContent = "Vérifiez le champ indiqué.";
+    }, true);
+
+    formulaireContact.addEventListener("submit", (event) => {
+        event.preventDefault();
+        retourContact.textContent = "Message envoyé.";
+    });
+}

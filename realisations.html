@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mon cyberfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/AestheticFluidBg.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <button id="bouton-menu" type="button" aria-controls="menu-principal" aria-expended="false">Menu</button>
+
+            <nav id="menu-principal">
+                <a href="index.html">Accueil</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="contact.html">Contact</a>
+             </nav>
+        </header>
+
+        <main class="contenu-animé">
+            <div class="introduction-fond" aria-hidden="true">
+                    <div id="fond-introduction"></div>
+            </div>
+
+            <h1>Réalisations</h1>
+
+            <div id="filtres-projets">
+                <button type="button" data-filtre="tous" aria-pressed="true">Tous</button>
+                <button type="button" data-filtre="reseau" aria-pressed="false">Réseau</button>
+                <button type="button" data-filtre="devsecops" aria-pressed="false">DevSecOps</button>
+            </div>
+
+            <div class="grille-projets">
+                <article data-categorie="reseau">
+                    <h2>Réseau sécurisé</h2>
+                    <p>Segmentation du réseau en VLAN et configuration des règles de filtrage.</p>
+                </article>
+
+                <article data-categorie="devsecops">
+                    <h2>Développement sécurisé</h2>
+                    <p>Intégration de contrôles de sécurité dans un pipeline.</p>
+                </article>
+            </div>
+        </main>
+    </body>
+</html>
