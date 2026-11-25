@@ -333,6 +333,10 @@ footer{
         inset 0 1px 0 rgba(255, 255, 255, 0.24);
 }
 
+.logo-bird-gum .logo-gum {
+    transform: translateY(-5px);
+}
+
 @media (min-width: 900px) {
     .introduction {
         box-sizing: border-box;
@@ -399,6 +403,10 @@ footer{
     .demarche-securite {
         margin: 24px 16px;
         padding: 16px;
+    }
+
+    .logo-bird-gum .logo-gum {
+        transform: translateY(-5px);
     }
 }
 
