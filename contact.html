@@ -26,23 +26,25 @@
                     <div id="fond-introduction"></div>
             </div>
 
-            <form id="formulaire-contact">
+            <form id="contact-form" class="contact-form">
                 <p>
-                    <label for="nom">Nom</label>
-                    <input id="nom" type="text" required>
-                </p>
+                    <div class="champ-contact">
+                        <label for="nom">Nom</label>
+                        <input id="nom" type="text" required>
+                    </div>
 
-                <p>
-                    <label for="email">Adresse e-mail</label>
-                    <input id="email" type="email" required>
-                </p>
+                    <div class="champ-contact">
+                        <label for="email">Adresse e-mail</label>
+                        <input id="email" type="email" required>
+                    </div>
 
-                <p>
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" maxlength="500" required></textarea>
-                </p>
+                    <div class="champ-contact">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" maxlength="500" required></textarea>
+                    </div>
 
-                <button type="submit">Envoyer</button>
+                    <button type="submit" class="bouton-envoyer">Envoyer</button>
+                </p>
                 <p id="retour-contact" role="status"></p>
             </form>
         </main>
