@@ -96,7 +96,7 @@ nav a:focus-visible {
 }
 
 .introduction-texte {
-    `display: grid;
+    display: grid;
     justify-items: start;
 }
 
@@ -230,6 +230,37 @@ footer{
 #filtres-projets button[aria-pressed="true"] {
     background-color: #ff5fc2;
     color: #1c1c1c;
+}
+
+@media (min-width: 900px) {
+    .introduction {
+        box-sizing: border-box;
+        min-height: clamp(420px, 55vh, 620px);
+        display: grid;
+        align-items: center;
+    }
+
+    .introduction-contenu {
+        width: 100%;
+        grid-template-columns: minmax(0, 480px) auto;
+        gap: clamp(40px, 5vw, 80px);
+    }
+
+    .introduction-texte h1 {
+        font-size: clamp(2.75rem, 4vw, 4rem);
+    }
+
+    .introduction-texte p {
+        font-size: clamp(1.125rem, 1.6vw, 1.5rem);
+    }
+
+    .introduction-texte .lien-projets {
+        font-size: 1.125rem;
+        padding: 14px 26px;
+    }
+    .logo-bird-gum .logo-gum {
+        transform: translateY(-3px);
+    }
 }
 
 @media (max-width: 600px) {
