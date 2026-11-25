@@ -82,17 +82,48 @@ nav a:focus-visible {
 }
 
 .introduction-contenu {
-    position: relative;
-    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0,320px) auto;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(32px, 6vw, 80px)
 }
 
-.introduction h1 {
+.introduction-contenu > .logo-bird-gum {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.introduction-texte {
+    `display: grid;
+    justify-items: start;
+}
+
+.logo-bird-gum {
+    display: block;
+    width: 325px;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-gum {
+    font-family: "DxBrutalist-ExtraBold";
+    font-size: 390px;
+    fill: #00ff0b
+}
+
+.logo-bird {
+    font-family: "Hermaiona";
+    font-size: 589px;
+    fill: #ff5fc2;
+}
+
+.introduction-texte h1 {
     margin: 0;
-    color: #ff5fc2;
-    font-size: clamp(48px, 7vw, 112px);
-    font-family: "Blubird", Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.1;
+    color: #e4e4e4;
 }
 
 .competences {
@@ -209,6 +240,16 @@ footer{
 
     .introduction {
         padding: 48px 16px;
+    }
+
+    .introduction-contenu {
+        grid-template-columns: minmax(0, 320px);
+        gap: 24px;
+    }
+
+    .introduction-texte {
+        justify-items: center;
+        text-align: center;
     }
 
     .competences,
