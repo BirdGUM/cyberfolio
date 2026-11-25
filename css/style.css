@@ -5,15 +5,29 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Hermaiona";
+    src: url("../fonts/Hermaiona.otf") format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Blubird";
+    src: url('../fonts/Blubird.otf') format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
 body {
     background-color: #1c1c1c;
     color: #e4e4e4;
-    font-family: Arial, sans-serif;
+    font-family: "Blubird", sans-serif;
 }
 
 .lien-projets{
     display: inline-block;
-    background-color: #FF5FC2;
+    background-color: #ff5fc2;
     color:#1c1c1c;
     padding: 12px 20px;
     border-radius: 999px;
@@ -76,7 +90,7 @@ nav a:focus-visible {
     margin: 0;
     color: #ff5fc2;
     font-size: clamp(48px, 10vw, 112px);
-    font-family: "DxBrutalist-ExtraBold", Arial, sans-serif;
+    font-family: "Blubird", Arial, sans-serif;
     font-weight: 400;
     line-height: 1;
 }

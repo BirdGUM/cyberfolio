@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact - Cyberfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/AestheticFluidBg.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <button id="bouton-menu" type="button" aria-controls="menu-principal" aria-expended="false">Menu</button>
+
+            <nav id="menu-principal">
+                <a href="index.html">Accueil</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="contact.html">Contact</a>
+             </nav>
+        </header>
+
+        <main class="contenu-animé">
+            <div class="introduction-fond" aria-hidden="true">
+                    <div id="fond-introduction"></div>
+            </div>
+
+            <form id="formulaire-contact">
+                <p>
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text" required>
+                </p>
+
+                <p>
+                    <label for="email">Adresse e-mail</label>
+                    <input id="email" type="email" required>
+                </p>
+
+                <p>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" maxlength="500" required></textarea>
+                </p>
+
+                <button type="submit">Envoyer</button>
+                <p id="retour-contact" role="status"></p>
+            </form>
+        </main>
+    </body>
+</html>
