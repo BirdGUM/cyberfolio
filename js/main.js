@@ -1,17 +1,3 @@
-const boutonMenu = document.querySelector("#bouton-menu");
-const menuPrincipal = document.querySelector("#menu-principal");
-
-if (boutonMenu && menuPrincipal) {
-    boutonMenu.addEventListener("click", () => {
-        const menuOuvert = menuPrincipal.classList.toggle("ouvert");
-
-        boutonMenu.setAttribute("aria-expended", String(menuOuvert));
-        boutonMenu.textContent = menuOuvert ? "Fermer le menu" : "Menu";
-    });
-
-    boutonMenu.classList.add("pret");
-}
-
 if (document.querySelector("#fond-introduction") && window.Color4Bg?.AestheticFluidBg) {
     new window.Color4Bg.AestheticFluidBg({
         dom: "fond-introduction",
@@ -21,14 +7,14 @@ if (document.querySelector("#fond-introduction") && window.Color4Bg?.AestheticFl
 }
 
 const boutonsFiltres = document.querySelectorAll("#filtres-projets button");
-const projets = document.querySelectorAll("article[data-categorie]");
+const projets = document.querySelectorAll("article[data-categories]");
 
 boutonsFiltres.forEach((bouton) =>{
     bouton.addEventListener("click", () => {
         const filtre = bouton.dataset.filtre;
 
         projets.forEach((projet) => {
-            const afficher = filtre === "tous" || projet.dataset.categorie === filtre;
+            const afficher = filtre === "tous" || projet.dataset.categories.split(/\s+/).includes(filtre);
             projet.hidden = !afficher;
         });
 

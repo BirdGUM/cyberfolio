@@ -31,18 +31,38 @@
             <div id="filtres-projets">
                 <button type="button" data-filtre="tous" aria-pressed="true">Tous</button>
                 <button type="button" data-filtre="reseau" aria-pressed="false">Réseau</button>
-                <button type="button" data-filtre="devsecops" aria-pressed="false">DevSecOps</button>
+                <button type="button" data-filtre="developpement" aria-pressed="false">Développement</button>
+                <button type="button" data-filtre="systemes" aria-pressed="false">Systèmes</button>
+                <button type="button" data-filtre="securite" aria-pressed="false">Sécurité</button>
+                <button type="button" data-filtre="auto-hébergement" aria-pressed="false">Auto-hébergement</button>
+                <button type="button" data-filtre="hardware" aria-pressed="false">Hardware</button>
+                <button type="button" data-filtre="creation" aria-pressed="false">Création</button>
             </div>
 
             <div class="grille-projets">
-                <article data-categorie="reseau">
-                    <h2>Réseau sécurisé</h2>
-                    <p>Segmentation du réseau en VLAN et configuration des règles de filtrage.</p>
+                <article data-categories="reseau systeme securite">
+                    <h2>Réseau d'entreprise virtualisé</h2>
+                    <p>Sous VMware et GNS3, j'ai construit un réseau séparant les postes utilisateurs, l'administration, Active Directory et un serveur web en DMZ. J'ai utiisé Open vSwitch pour les VLAN et pfSense pour contrôler les communications entre les zones.</p>
                 </article>
 
-                <article data-categorie="devsecops">
-                    <h2>Développement sécurisé</h2>
-                    <p>Intégration de contrôles de sécurité dans un pipeline.</p>
+                <article data-categories="developpement securite">
+                    <h2>AterlierRDV - Projet de groupe</h2>
+                    <p>Sur une application de prise de rendez-vous, nous avons intégré des contrôles dans Gitea pour repérer les secrets exposés, analyser le code Python et vérifier les dépendances. Nous avons aussi configuré le conteneur Docker pour que l'application s'exécute avec un utilisateur dédié.</p>
+                </article>
+
+                <article data-categories="reseau systeme auto-hébergement">
+                    <h2>Cloud familial auto-hébergé</h2>
+                    <p>J'ai créé et mis en service un cloud familial pour que mes proches disposent de leur propre espace de stockage ainsi que d'un stockage partagé pour se transmettre des documents en toute sécurité. Je m'occupe de l'hébergement et de l'administration du service.</p>
+                </article>
+
+                <article data-categories="developpement hardware creation">
+                    <h2>Tamagotchi sur Raspberry Pi</h2>
+                    <p>J'ai fabriqué un Tamagotchi personnalisé autour d'un Raspberry Pi, avec des pièces imprimées en 3D. Ce projet réunit deux aspects de mon travail que j'aime associer: l'informatique et la création.</p>
+                </article>
+
+                <article data-categories="auto-hébergement developpement creation">
+                    <h2>Serveurs Minecraft et mods</h2>
+                    <p>J'ai administré plusieurs serveurs Minecraft et je développe des mods pour personnaliser l'expérience de jeu.</p>
                 </article>
             </div>
         </main>
