@@ -130,13 +130,14 @@ nav a:focus-visible {
     padding: 32px 24px;
 }
 
-.competences ul {
-    display: flex;
-    flex-wrap: wrap balance;
-    gap: 16px;
-    list-style: none;
-    margin: 0;
+.liste-competences {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 0;
+    list-style: none;
 }
 
 .liste-competences > li {
